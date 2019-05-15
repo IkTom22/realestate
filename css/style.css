@@ -75,7 +75,26 @@ body {
 .sidebar {
   background-color: #c69963;
   grid-column: sidebar-start / sidebar-end;
-  grid-row: 1 / -1; }
+  grid-row: 1 / -1;
+  display: flex;
+  justify-content: center; }
+  .sidebar button {
+    border: none;
+    border-radius: 0;
+    background-color: #fff;
+    height: 2px;
+    width: 4.5rem;
+    margin-top: 4rem; }
+    .sidebar button::before, .sidebar button::after {
+      background-color: #fff;
+      height: 2px;
+      width: 4.5rem;
+      content: "";
+      display: block; }
+    .sidebar button::before {
+      transform: translateY(-1.5rem); }
+    .sidebar button::after {
+      transform: translateY(1.3rem); }
 
 .header {
   background-color: #54483A;
@@ -279,3 +298,12 @@ body {
   .nav__link:hover, .nav__link:active {
     background-color: rgba(255, 255, 255, 0.05);
     transform: translateY(-3px); }
+
+.copyright {
+  font-size: 1.4rem;
+  color: #f9f7f6;
+  margin-top: 6rem;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  width: 70%; }
